@@ -90,5 +90,6 @@ object Entities {
     .add("contenturl", StringType, nullable = true)
     .add("val_uplink", DecimalType(18,3), nullable = true)
     .add("val_downlink", DecimalType(18,3), nullable = true)
-    .add("_corrupt_record", StringType, nullable = true)
+    .add("corrupt_record", StringType, nullable = true)
+    .add("val_qci", IntegerType, nullable = true)
 }

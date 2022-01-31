@@ -32,7 +32,7 @@ class DataProcessor(
 
   //override def getTrafficTable: String = "datos.tbl_tmp_fact_datos_trafico_tmp"
 
-  override def getTrafficTable: String = "datos.tbl_tmp_fact_datos_trafico_tmp"
+  override def getTrafficTable: String = "datos.tbl_tmp_fact_datos_traficotmp10646"
 
 
   override def getSchema: StructType = Entities.dataSchema
@@ -68,6 +68,6 @@ class DataProcessor(
       s"record_sn, chargingid, first_sequence_number, last_sequence_number, " +
       s"cause_for_record_closing, icid, id_archivo, nodo_med, fuenteid, " +
       s"REGEXP_REPLACE(CONTENTURL,'[^a-zA-Z0-9\\u002F-\\u003A-\\u002E-\\u005F-\\u002D]+', ''), " +
-      s"fe_carga_dwh, id_archivo_dwh, val_uplink, val_downlink, trafficdate, lpad(hour(current_timestamp()), 2, '0'), val_qci  " +
+      s"fe_carga_dwh, id_archivo_dwh, val_uplink, val_downlink, val_qci, trafficdate, lpad(hour(current_timestamp()), 2, '0') " +
       s" FROM $tempViewName"
 }

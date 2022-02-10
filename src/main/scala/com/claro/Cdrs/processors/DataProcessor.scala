@@ -29,14 +29,13 @@ class DataProcessor(
   override def getLoadControlTable: String = "datos.tbl_datos_control_cargue"
 
 
-
   //override def getTrafficTable: String = "datos.tbl_tmp_fact_datos_trafico_tmp"
 
-  override def getTrafficTable: String = "datos.tbl_tmp_fact_datos_traficotmp10646"
+
+  override def getTrafficTable: String = "desarrollo.tbl_tmp_fact_datos_trafico"
 
 
   override def getSchema: StructType = Entities.dataSchema
-
 
 
   override def getTimestampField: String = "record_opening_time"

@@ -2,27 +2,27 @@
 [debug] IncrementalCompile.incrementalCompile
 [debug] previous = Stamps for: 57 products, 11 sources, 6 libraries
 [debug] current source = Set(${BASE}/src/main/scala/com/claro/Cdrs/entities/Entities.scala, ${BASE}/src/main/scala/com/claro/Cdrs/processors/VoiceProcessor.scala, ${BASE}/src/main/scala/com/claro/Cdrs/core/FirstLastProcessor.scala, ${BASE}/src/main/scala/com/claro/Cdrs/processors/DataProcessor.scala, ${BASE}/src/main/scala/App.scala, ${BASE}/src/main/scala/com/claro/Cdrs/processors/DataVoiceProcessor.scala, ${BASE}/src/main/scala/AppFirstLast.scala, ${BASE}/src/main/scala/com/claro/Cdrs/processors/KafkaMessageCdr.scala, ${BASE}/src/main/scala/com/claro/Cdrs/core/MultiFileProcessor.scala, ${BASE}/src/main/scala/com/claro/Cdrs/core/FileProcessor.scala, ${BASE}/src/main/scala/com/claro/Cdrs/core/Notification.scala)
-[debug] > initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/main/scala/com/claro/Cdrs/processors/DataProcessor.scala), unmodified = ...),Set(),Set(),API Changes: Set())
+[debug] > initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/main/scala/com/claro/Cdrs/processors/DataProcessor.scala, ${BASE}/src/main/scala/com/claro/Cdrs/entities/Entities.scala), unmodified = ...),Set(${BASE}/target/scala-2.11/classes/com/claro/Cdrs/entities/Entities$.class),Set(),API Changes: Set())
 [debug] 
 [debug] Initial source changes:
 [debug] 	removed: Set()
 [debug] 	added: Set()
-[debug] 	modified: Set(${BASE}/src/main/scala/com/claro/Cdrs/processors/DataProcessor.scala)
-[debug] Invalidated products: Set()
+[debug] 	modified: Set(${BASE}/src/main/scala/com/claro/Cdrs/processors/DataProcessor.scala, ${BASE}/src/main/scala/com/claro/Cdrs/entities/Entities.scala)
+[debug] Invalidated products: Set(${BASE}/target/scala-2.11/classes/com/claro/Cdrs/entities/Entities$.class)
 [debug] External API changes: API Changes: Set()
 [debug] Modified binary dependencies: Set()
-[debug] Initial directly invalidated classes: Set(com.claro.Cdrs.processors.DataProcessor)
+[debug] Initial directly invalidated classes: Set(com.claro.Cdrs.processors.DataProcessor, com.claro.Cdrs.entities.Entities)
 [debug] Sources indirectly invalidated by:
-[debug] 	product: Set()
+[debug] 	product: Set(${BASE}/src/main/scala/com/claro/Cdrs/entities/Entities.scala)
 [debug] 	binary dep: Set()
 [debug] 	external source: Set()
-[debug] All initially invalidated classes: Set(com.claro.Cdrs.processors.DataProcessor)
-[debug] All initially invalidated sources:Set(${BASE}/src/main/scala/com/claro/Cdrs/processors/DataProcessor.scala)
-[debug] Initial set of included nodes: com.claro.Cdrs.processors.DataProcessor
+[debug] All initially invalidated classes: Set(com.claro.Cdrs.processors.DataProcessor, com.claro.Cdrs.entities.Entities)
+[debug] All initially invalidated sources:Set(${BASE}/src/main/scala/com/claro/Cdrs/processors/DataProcessor.scala, ${BASE}/src/main/scala/com/claro/Cdrs/entities/Entities.scala)
+[debug] Initial set of included nodes: com.claro.Cdrs.processors.DataProcessor, com.claro.Cdrs.entities.Entities
 [debug] compilation cycle 1
-[info] compiling 1 Scala source to C:\Users\LuisHernandoCorreaZa\IdeaProjects\cdrprocessor-20220120T210553Z-001\cdrprocessor\target\scala-2.11\classes ...
+[info] compiling 2 Scala sources to C:\Users\LuisHernandoCorreaZa\IdeaProjects\cdrprocessor-20220120T210553Z-001\cdrprocessor\target\scala-2.11\classes ...
 [debug] Getting org.scala-sbt:compiler-bridge_2.11:1.4.3:compile for Scala 2.11.12
-[debug] [zinc] Running cached compiler 1269815d for Scala compiler version 2.11.12
+[debug] [zinc] Running cached compiler 561bc868 for Scala compiler version 2.11.12
 [debug] [zinc] The Scala compiler is invoked with:
 [debug] 	-bootclasspath
 [debug] 	C:\Program Files\Java\jdk1.8.0_271\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_271\jre\classes;C:\Users\LuisHernandoCorreaZa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.11.12\scala-library-2.11.12.jar
@@ -34,5 +34,5 @@
 [debug] Final step, transitive dependencies:
 [debug] 	Set()
 [debug] No classes were invalidated.
-[debug] Scala compilation took 0.8068719 s
+[debug] Scala compilation took 4.9559212 s
 [info] done compiling
